@@ -29,6 +29,7 @@ import image3About from '../../assets/image3.png';
 import imageTeam from '../../assets/image4.jpg';
 import image2Team from '../../assets/image5.jpg';
 import image3Team from '../../assets/image6.jpg';
+import image4Team from '../../assets/image7.jpg';
 
 import {
   BANNER_ANIMATION,
@@ -432,7 +433,7 @@ const Landing: React.FC = () => {
                   <ReadMoreInner>
                     <img
                       src={image2Team}
-                      alt="Qual a diferença entre Hard Skills & Soft Skills?"
+                      alt="Importância do trabalho em equipe para sua carreira"
                     />
                     <div>
                       <h4>
@@ -504,7 +505,46 @@ const Landing: React.FC = () => {
                         atitude e oferecer soluções.
                       </p>
                     </div>
-                    <img src={image3Team} alt="Como desenvolver Soft Skills?" />
+                    <img
+                      src={image3Team}
+                      alt="Quais principais habilidades para trabalhar bem em
+                        equipe?"
+                    />
+                  </ReadMoreInner>
+
+                  <ReadMoreInner>
+                    <img
+                      src={image4Team}
+                      alt="Como estimular o trabalho em equipe na sua empresa"
+                    />
+                    <div>
+                      <h4>
+                        Como estimular o trabalho em equipe na sua empresa
+                      </h4>
+                      <p>
+                        A estimulação do trabalho em equipe começa com a
+                        <b> contratação correta.</b> Identificar no processo
+                        seletivo o perfil de funcionário ideal para a sua
+                        empresa é fundamental. Além disso, é possível incentivar
+                        o trabalho em equipe usando algumas técnicas simples de
+                        <b> motivação e encorajamento de convivência.</b>
+                        <br />
+                        <br />
+                        Comemorar as <b>vitórias e metas alcançadas </b>
+                        ressaltando o papel do trabalho em equipe no sucesso é
+                        uma ótima forma de incentivar esse comportamento. Além
+                        disso, <b>as dinâmicas e outros exercícios</b> que
+                        possibilitam que os funcionários se conheçam melhor
+                        podem auxiliar no processo.
+                        <br />
+                        <br />A forma mais fácil de estimular o trabalho em
+                        equipe na sua empresa, no entanto, é através de
+                        <b> treinamentos e coaching</b>. O processo de coaching
+                        é capaz de ajudar os colaboradores a{' '}
+                        <b>desenvolver as habilidades necessárias</b> para
+                        funcionar bem como um grupo.
+                      </p>
+                    </div>
                   </ReadMoreInner>
                 </section>
               </ReadMore>
