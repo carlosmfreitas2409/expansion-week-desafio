@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React, { useCallback, useState } from 'react';
 import ModalVideo from 'react-modal-video';
 import {
@@ -25,6 +26,9 @@ import creativityVector from '../../assets/creativity.svg';
 import imageAbout from '../../assets/image.jpg';
 import image2About from '../../assets/image2.png';
 import image3About from '../../assets/image3.png';
+import imageTeam from '../../assets/image4.jpg';
+import image2Team from '../../assets/image5.jpg';
+import image3Team from '../../assets/image6.jpg';
 
 import {
   BANNER_ANIMATION,
@@ -43,8 +47,8 @@ import {
   RecommendedNext,
   AnimatedAbout,
   AboutInner,
-  AboutReadMoreBtn,
-  AboutReadMore,
+  ReadMoreBtn,
+  ReadMore,
   ReadMoreInner,
   TeamWorkCard,
   TeamWorkIcon,
@@ -58,6 +62,7 @@ const Landing: React.FC = () => {
   const [scrollX, setScrollX] = useState(0);
   const [isVideoOpen, setVideoOpen] = useState(false);
   const [aboutRead, setAboutRead] = useState(false);
+  const [teamRead, setTeamRead] = useState(false);
 
   const handleRightArrow = useCallback(() => {
     let x = scrollX - Math.round(346 / 2);
@@ -79,6 +84,10 @@ const Landing: React.FC = () => {
   const handleAboutRead = useCallback(() => {
     setAboutRead(!aboutRead);
   }, [aboutRead]);
+
+  const handleTeamRead = useCallback(() => {
+    setTeamRead(!teamRead);
+  }, [teamRead]);
 
   const handleOpenRead = useCallback(() => {
     setAboutRead(true);
@@ -224,16 +233,16 @@ const Landing: React.FC = () => {
               </div>
             </AboutInner>
 
-            <AboutReadMoreBtn
+            <ReadMoreBtn
               type="button"
               onClick={handleAboutRead}
               id="aboutReadMore"
             >
               {`${aboutRead ? 'Ocultar' : 'Ler Mais'}`}
-            </AboutReadMoreBtn>
+            </ReadMoreBtn>
 
             {aboutRead && (
-              <AboutReadMore>
+              <ReadMore>
                 <section>
                   <ReadMoreInner>
                     <div>
@@ -328,7 +337,7 @@ const Landing: React.FC = () => {
                     title="SoftSkill"
                   />
                 </section>
-              </AboutReadMore>
+              </ReadMore>
             )}
           </section>
         </AnimatedAbout>
@@ -386,6 +395,120 @@ const Landing: React.FC = () => {
                 </p>
               </TeamWorkCard>
             </div>
+
+            <ReadMoreBtn type="button" onClick={handleTeamRead}>
+              {`${teamRead ? 'Ocultar' : 'Ler Mais'}`}
+            </ReadMoreBtn>
+
+            {teamRead && (
+              <ReadMore>
+                <section>
+                  <ReadMoreInner>
+                    <div>
+                      <h4>O que é trabalho em equipe?</h4>
+                      <p>
+                        <b>Trabalho em equipe </b>
+                        pode ser definido como os esforços conjuntos de um grupo
+                        ou sociedade visando a solução de um problema. Ou seja,
+                        um grupo ou conjunto de pessoas que se dedicam a
+                        realizar determinada tarefa estão trabalhando em equipe.
+                        <br />
+                        <br />O trabalho em equipe, através da ação conjunta,
+                        possibilita a troca de conhecimentos entre especialistas
+                        de diversas áreas. Como cada pessoa é responsável por
+                        uma parte da tarefa, o trabalho em equipe oferece também
+                        <b> maior agilidade</b> e <b>dinamismo</b>.
+                        <br />
+                        <br />
+                        Um bom exemplo de trabalho em equipe é a forma que times
+                        esportivos são divididos. Cada jogador possui uma função
+                        específica, devendo desempenhá-la bem sem invadir o
+                        espaço e função dos seus companheiros de time.
+                      </p>
+                    </div>
+                    <img src={imageTeam} alt="O que é trabalho em equipe?" />
+                  </ReadMoreInner>
+
+                  <ReadMoreInner>
+                    <img
+                      src={image2Team}
+                      alt="Qual a diferença entre Hard Skills & Soft Skills?"
+                    />
+                    <div>
+                      <h4>
+                        Importância do trabalho em equipe para sua carreira
+                      </h4>
+                      <p>
+                        Cada vez mais as organizações valorizam colaboradores
+                        que apresentam facilidade com trabalho em equipe. Como a
+                        grande maioria das tarefas e serviços requerem a atuação
+                        de diferentes setores profissionais,{' '}
+                        <b>colaborar e se comunicar bem</b> é mais do que
+                        essencial.
+                        <br />
+                        <br />A capacidade para trabalho em equipe possibilita
+                        que você apresente melhores resultados e mais
+                        eficiência. Além disso, um ambiente corporativo composto
+                        por pessoas que se comunicam bem e colaboram sem
+                        problemas é mais
+                        <b> harmonioso</b>, melhorando muito a qualidade de vida
+                        de todos os envolvidos.
+                        <br />
+                        <br />A diferença de pensamento e visão entre pessoas
+                        distintas é fundamental para uma{' '}
+                        <b>resolução de problemas eficiente</b>. Quanto{' '}
+                        <b>mais perspectivas uma equipe tiver</b> sobre um único
+                        problema, mais fácil é encontrar a melhor solução
+                        possível.
+                      </p>
+                    </div>
+                  </ReadMoreInner>
+
+                  <ReadMoreInner>
+                    <div>
+                      <h4>
+                        Quais principais habilidades para trabalhar bem em
+                        equipe?
+                      </h4>
+                      <p>
+                        O trabalho em equipe é uma competência composta de
+                        diferentes habilidades. São capacidades que podem ser
+                        aprendidas e desenvolvidas, e que devem ser trabalhadas
+                        por todos os profissionais. Confira quais habilidades
+                        precisam ser desenvolvidas para aprimorar sua capacidade
+                        de trabalho em equipe.
+                        <br />
+                        <br />
+                        <h5>Gerenciar Conflitos</h5>
+                        Para trabalhar em equipe efetivamente, é preciso
+                        identificar, gerenciar e resolver conflitos. Para isso,
+                        é necessário desenvolver um conjunto de habilidades
+                        sociais. Destacam-se a empatia e a assertividade.
+                        <br />
+                        <br />
+                        <h5>Comunicação Eficiente</h5>
+                        Se comunicar de forma clara e eficiente é essencial para
+                        um bom trabalho em equipe. Alinhar as metas e objetivos
+                        é o primeiro passo para que tudo funcione sem problemas.
+                        Quando todos os colaboradores entendem qual a direção
+                        que devem seguir com o trabalho, é mais fácil orquestrar
+                        a execução.
+                        <br />
+                        <br />
+                        <h5>Proatividade</h5>A proatividade é antecipar
+                        necessidades e, de forma autônoma, todas as atitudes
+                        para atendê-las. Para o bom trabalho em equipe, é
+                        preciso que todos os colaboradores tenham a habilidade
+                        de identificar situações-problema antes que elas
+                        aconteçam. O mais importante, no entanto, é tomar uma
+                        atitude e oferecer soluções.
+                      </p>
+                    </div>
+                    <img src={image3Team} alt="Como desenvolver Soft Skills?" />
+                  </ReadMoreInner>
+                </section>
+              </ReadMore>
+            )}
           </section>
         </SectionContainer>
 

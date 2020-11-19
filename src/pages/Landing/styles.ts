@@ -200,7 +200,7 @@ export const AboutInner = styled.div`
   }
 `;
 
-export const AboutReadMoreBtn = styled.button`
+export const ReadMoreBtn = styled.button`
   width: 20%;
   margin: 50px auto 0;
 
@@ -220,7 +220,7 @@ export const AboutReadMoreBtn = styled.button`
   }
 `;
 
-export const AboutReadMore = styled.section`
+export const ReadMore = styled.section`
   display: flex;
   justify-content: center;
 
@@ -263,12 +263,19 @@ export const ReadMoreInner = styled.div`
     }
 
     p {
-      font-size: 20px;
+      font-size: 18px;
       font-family: 'Open Sans', sans-serif;
       margin-top: 20px;
 
       strong {
         font-weight: bold;
+      }
+
+      h5 {
+        font-weight: bold;
+        font-size: 20px;
+        color: #000;
+        margin-bottom: 4px;
       }
     }
   }
