@@ -16,6 +16,11 @@ export const Container = styled.footer`
 
     margin-top: 80px;
     margin-bottom: 43px;
+
+    @media (max-width: 680px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
 
@@ -53,7 +58,18 @@ export const FooterLeft = styled.div`
 export const FooterRight = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+
+  @media (max-width: 680px) {
+    margin-top: 30px;
+
+    p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 
   p > a {
     color: #fff;
@@ -68,6 +84,11 @@ export const FooterRight = styled.div`
 
   a + a {
     margin-left: 30px;
+
+    @media (max-width: 680px) {
+      margin-top: 10px;
+      margin-left: 0;
+    }
   }
 
   div {

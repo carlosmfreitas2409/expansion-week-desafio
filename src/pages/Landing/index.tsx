@@ -11,8 +11,6 @@ import {
 import { motion } from 'framer-motion';
 import { scroller } from 'react-scroll';
 
-import 'react-modal-video/css/modal-video.min.css';
-
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
@@ -38,6 +36,7 @@ import {
   ABOUT_ANIMATION,
 } from '../../utils/animations';
 
+import 'react-modal-video/css/modal-video.min.css';
 import {
   Container,
   AnimatedBanner,

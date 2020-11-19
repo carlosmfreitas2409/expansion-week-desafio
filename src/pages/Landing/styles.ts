@@ -24,6 +24,10 @@ export const AnimatedBanner = styled(motion.div)`
   background-repeat: no-repeat;
   background-position: right top;
 
+  @media (max-width: 1194px) {
+    background: none;
+  }
+
   height: 827px;
 
   section {
@@ -33,12 +37,20 @@ export const AnimatedBanner = styled(motion.div)`
     width: 1200px;
     margin-top: 75px;
 
+    @media (max-width: 1194px) {
+      align-items: center;
+    }
+
     h2 {
       width: 316px;
       color: #333;
       font-weight: 700;
       font-size: 48px;
-      line-height: 55px;
+
+      @media (max-width: 1194px) {
+        width: 377px;
+        font-size: 34px;
+      }
     }
 
     p {
@@ -155,6 +167,10 @@ export const AnimatedAbout = styled(motion.div)`
   display: flex;
   justify-content: center;
 
+  @media (max-width: 1194px) {
+    margin-top: 10px;
+  }
+
   section {
     display: flex;
     justify-content: space-between;
@@ -168,8 +184,21 @@ export const AboutInner = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 1194px) {
+    flex-direction: column;
+
+    img {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
   & + div {
     margin-top: 70px;
+
+    @media (max-width: 1194px) {
+      margin-top: 100px;
+    }
   }
 
   div {
@@ -181,6 +210,10 @@ export const AboutInner = styled.div`
     h4 {
       font-family: 'Open Sans', sans-serif;
       font-size: 36px;
+
+      @media (max-width: 1194px) {
+        font-size: 24px;
+      }
     }
 
     h3 {
@@ -188,6 +221,10 @@ export const AboutInner = styled.div`
       font-weight: bold;
       color: #333333;
       margin-top: 13px;
+
+      @media (max-width: 1194px) {
+        font-size: 36px;
+      }
     }
 
     p {
@@ -196,6 +233,12 @@ export const AboutInner = styled.div`
       font-size: 24px;
       text-align: center;
       margin-top: 30px;
+
+      @media (max-width: 1194px) {
+        font-size: 17px;
+        margin-top: 20px;
+        padding: 0 25px;
+      }
     }
   }
 `;
@@ -217,6 +260,10 @@ export const ReadMoreBtn = styled.button`
 
   &:hover {
     background: ${shade(0.2, '#6C63FF')};
+  }
+
+  @media (max-width: 1194px) {
+    width: calc(100% - 70%);
   }
 `;
 
@@ -294,6 +341,10 @@ export const SectionDivisor = styled.div`
   color: #cccccc;
 
   margin: 83px auto;
+
+  @media (max-width: 1194px) {
+    width: calc(100% - 10em);
+  }
 `;
 
 export const SectionTitle = styled.h3`
@@ -301,6 +352,11 @@ export const SectionTitle = styled.h3`
   font-weight: bold;
   color: #333333;
   text-align: center;
+
+  @media (max-width: 1194px) {
+    font-size: 48px;
+    padding: 0 50px;
+  }
 `;
 
 export const SectionContainer = styled.div`
@@ -316,6 +372,13 @@ export const SectionContainer = styled.div`
     > div {
       margin-top: 63px;
       display: flex;
+
+      @media (max-width: 1194px) {
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        padding: 0 45px;
+      }
     }
   }
 `;
@@ -337,8 +400,17 @@ export const TeamWorkCard = styled.div<TeamWorkProps>`
     transform: translateY(-5px) translateZ(0);
   }
 
+  /* @media (max-width: 1194px) {
+    margin: 0 55px;
+  } */
+
   & + div {
     margin-left: 30px;
+
+    @media (max-width: 1194px) {
+      margin-left: 0px;
+      margin-top: 50px;
+    }
   }
 
   h4 {
@@ -396,6 +468,11 @@ export const CommonQuestionsCard = styled.div`
 
   & + div {
     margin-left: 30px;
+
+    @media (max-width: 1194px) {
+      margin-left: 0px;
+      margin-top: 50px;
+    }
   }
 
   h3 {

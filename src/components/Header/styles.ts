@@ -29,6 +29,17 @@ export const AnimatedContainer = styled(motion.header)`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 1245px) {
+      padding: 30px;
+    }
+
+    @media (max-width: 660px) {
+      nav {
+        visibility: hidden;
+        display: none;
+      }
+    }
   }
 `;
 
