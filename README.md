@@ -31,7 +31,7 @@
 </p>
 
 <p align="center">
-  <a href="#" target="_blank">
+  <a href="https://expansion-week-desafio.netlify.app/" target="_blank">
     <img alt="Demo on Netlify" src=".github/demo_on_netlify.png">
   </a>
 </p>
