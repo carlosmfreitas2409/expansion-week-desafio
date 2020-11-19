@@ -1,46 +1,72 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img alt="Soft Skills" src=".github/softskills-logo.png" />
+    <br>
+    Soft Skills - Desafio Expansion Week
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/carlosmfreitas2409/expansion-week-desafio.svg">
 
-## Available Scripts
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/carlosmfreitas2409/expansion-week-desafio.svg">
 
-In the project directory, you can run:
+  <a href="https://github.com/carlosmfreitas2409/expansion-week-desafio/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/carlosmfreitas2409/expansion-week-desafio.svg">
+  </a>
 
-### `yarn start`
+  <img alt="GitHub" src="https://img.shields.io/github/license/carlosmfreitas2409/expansion-week-desafio.svg">
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h4 align="center">
+  Este é um projeto sobre <b>Soft Skills</b>, desenvolvido para o desafio do Expansion Week, um evento inédito - exclusivo para alunos do Bootcamp GoStack da RocketSeat - de encontros ao-vivo com pessoas e empresas que entendem muito sobre as habilidades que um dev precisa ter.
+</h4>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p align="center">
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">Licença</a>
+</p>
 
-### `yarn test`
+<p align="center">
+  <img width="800" src=".github/softskills-preview.png" alt="Soft Skills Preview">
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  <a href="#" target="_blank">
+    <img alt="Demo on Netlify" src=".github/demo_on_netlify.png">
+  </a>
+</p>
 
-### `yarn build`
+## 🎨 Layout
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+No link abaixo, você encontra o layout do projeto web em que desenvolvi para este site. Lembrando que você precisa ter uma conta no Figma para acessá-lo.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Layout Web](https://www.figma.com/file/Tyb2uKd53CVtCp7qPKLCU6/GoStack-Expansion-Week-Desafio?node-id=0%3A1)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :rocket: Tecnologias
 
-### `yarn eject`
+Esse projeto foi desenvolvido usando as seguintes tecnologias:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [ReactJS](https://reactjs.org/)
+- [Typescript][ts]
+- [react-router-dom](https://github.com/ReactTraining/react-router)
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [react-scroll](https://github.com/fisshy/react-scroll/)
+- [react-modal-video](https://github.com/appleple/react-modal-video/)
+- [styled-components](https://www.styled-components.com/)
+- [framer-motion](https://www.framer.com/motion/)
+- [polished](https://polished.js.org)
+- [VS Code][vscode] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :memo: Licença
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/carlosmfreitas2409/expansion-week-desafio/blob/master/LICENSE) para mais informações.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+Feito com 💜 por Carlos Eduardo :wave:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[ts]: https://www.typescriptlang.org
+[vscode]: https://code.visualstudio.com/
+[yarn]: https://yarnpkg.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
