@@ -171,7 +171,7 @@ export const AnimatedAbout = styled(motion.div)`
     margin-top: 10px;
   }
 
-  section {
+  > section {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -269,38 +269,61 @@ export const ReadMoreBtn = styled.button`
 
 export const ReadMore = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   margin-top: 50px;
 
-  section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    width: 992px;
-
+  @media (max-width: 1094px) {
     iframe {
-      border-radius: 5px;
-      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-      margin-top: 50px;
+      width: calc(100% - 25%);
+      /* margin: 0 30px; */
     }
+  }
+
+  iframe {
+    border-radius: 5px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
   }
 `;
 
 export const ReadMoreInner = styled.div`
   display: flex;
 
-  &:nth-of-type(even) div {
-    padding-inline-end: 0;
-    padding-inline-start: 74px;
-  }
-
   & + div {
     margin-top: 60px;
   }
 
+  &:nth-of-type(even) div {
+    padding-inline-end: 0;
+    padding-inline-start: 74px;
+
+    @media (max-width: 1094px) {
+      padding-inline-end: 0;
+      padding-inline-start: 0;
+    }
+  }
+
+  @media (max-width: 1094px) {
+    flex-direction: column;
+
+    width: 100vw;
+    padding: 0 35px;
+
+    img {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
   > div {
+    @media (max-width: 1094px) {
+      padding-inline-end: 0;
+      padding-inline-start: 0;
+    }
+
     padding-inline-end: 74px;
 
     h4 {
@@ -363,7 +386,7 @@ export const SectionContainer = styled.div`
   display: flex;
   justify-content: center;
 
-  section {
+  > section {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -376,7 +399,6 @@ export const SectionContainer = styled.div`
       @media (max-width: 1194px) {
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */
         padding: 0 45px;
       }
     }
@@ -400,10 +422,6 @@ export const TeamWorkCard = styled.div<TeamWorkProps>`
     transform: translateY(-5px) translateZ(0);
   }
 
-  /* @media (max-width: 1194px) {
-    margin: 0 55px;
-  } */
-
   & + div {
     margin-left: 30px;
 
@@ -418,6 +436,7 @@ export const TeamWorkCard = styled.div<TeamWorkProps>`
     font-weight: bold;
     color: #000;
     margin-top: 16px;
+    text-align: center;
   }
 
   p {

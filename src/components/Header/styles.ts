@@ -34,7 +34,7 @@ export const AnimatedContainer = styled(motion.header)`
       padding: 30px;
     }
 
-    @media (max-width: 660px) {
+    @media (max-width: 716px) {
       nav {
         visibility: hidden;
         display: none;
@@ -76,5 +76,9 @@ export const NavLinks = styled(LinkScroll)`
 
     border-bottom: 2px solid #ff6584;
     padding-bottom: 10px;
+  }
+
+  @media (max-width: 1194px) {
+    color: #333333;
   }
 `;

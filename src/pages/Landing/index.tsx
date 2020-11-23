@@ -243,100 +243,95 @@ const Landing: React.FC = () => {
 
             {aboutRead && (
               <ReadMore>
-                <section>
-                  <ReadMoreInner>
-                    <div>
-                      <h4>O que são Soft Skills?</h4>
-                      <p>
-                        As soft skills são um conjunto de
-                        <strong>
-                          {' '}
-                          habilidades e competências relacionadas ao
-                          comportamento humano.
-                        </strong>
-                        <br />
-                        <br />
-                        Dessa forma, são consideradas como características
-                        necessárias para que um profissional alcance os seus
-                        objetivos profissionais, aquilo que estabelece para a
-                        sua carreira.
-                        <br />
-                        <br />
-                        Como você deve imaginar, as soft skills esperadas de
-                        determinada pessoa estão relacionadas à sua área de
-                        atuação e, principalmente, ao posto que ela deseja
-                        ocupar no mercado de trabalho.
-                      </p>
-                    </div>
-                    <img src={imageAbout} alt="O que é Soft Skills?s" />
-                  </ReadMoreInner>
+                <ReadMoreInner>
+                  <div>
+                    <h4>O que são Soft Skills?</h4>
+                    <p>
+                      As soft skills são um conjunto de
+                      <strong>
+                        {' '}
+                        habilidades e competências relacionadas ao comportamento
+                        humano.
+                      </strong>
+                      <br />
+                      <br />
+                      Dessa forma, são consideradas como características
+                      necessárias para que um profissional alcance os seus
+                      objetivos profissionais, aquilo que estabelece para a sua
+                      carreira.
+                      <br />
+                      <br />
+                      Como você deve imaginar, as soft skills esperadas de
+                      determinada pessoa estão relacionadas à sua área de
+                      atuação e, principalmente, ao posto que ela deseja ocupar
+                      no mercado de trabalho.
+                    </p>
+                  </div>
+                  <img src={imageAbout} alt="O que é Soft Skills?s" />
+                </ReadMoreInner>
 
-                  <ReadMoreInner>
-                    <img
-                      src={image2About}
-                      alt="Qual a diferença entre Hard Skills & Soft Skills?"
-                    />
-                    <div>
-                      <h4>Qual a diferença entre Hard Skills & Soft Skills?</h4>
-                      <p>
-                        As Hard Skills são as habilidades técnicas, não
-                        comportamentais. Ou seja, tudo aquilo que você aprende
-                        no ensino formal ou não, em cursos, treinamentos, na
-                        graduação e pós-graduação.
-                        <br />
-                        <br />
-                        São as informações que você quer colocar no currículo,
-                        atualizar no perfil do LinkedIn ou destacar para o
-                        recrutador em um processo de seleção.
-                        <br />
-                        <br />
-                        As hard skills são concretas, quantificáveis e de
-                        aprendizado técnico.
-                        <br />
-                        <br />
-                        Já as soft skills, como dissemos acima, trabalham no
-                        universo do que é comportamental e, portanto, são
-                        aprendizados subjetivos e difíceis de serem analisados,
-                        como o pensamento crítico, a positividade e a capacidade
-                        de tomada de decisão.
-                      </p>
-                    </div>
-                  </ReadMoreInner>
-
-                  <ReadMoreInner>
-                    <div>
-                      <h4>Como desenvolver Soft Skills?</h4>
-                      <p>
-                        Como são características comportamentais, desenvolver
-                        soft skills ficam muito a cargo do indivíduo.
-                        <br />
-                        <br />
-                        É preciso estar atento às próprias características,
-                        dedicado ao autoconhecimento, à melhoria contínua e à
-                        reflexão sobre as suas próprias atitudes.
-                        <br />
-                        <br />
-                        Além da reflexão individual, uma maneira de estimular o
-                        autoconhecimento para gerar uma mudança comportamental é
-                        apostando no Coaching, como destacamos antes.
-                      </p>
-                    </div>
-                    <img
-                      src={image3About}
-                      alt="Como desenvolver Soft Skills?"
-                    />
-                  </ReadMoreInner>
-
-                  <iframe
-                    width="637"
-                    height="346"
-                    src="https://www.youtube.com/embed/qrB94YucxFw"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title="SoftSkill"
+                <ReadMoreInner>
+                  <img
+                    src={image2About}
+                    alt="Qual a diferença entre Hard Skills & Soft Skills?"
                   />
-                </section>
+                  <div>
+                    <h4>Qual a diferença entre Hard Skills & Soft Skills?</h4>
+                    <p>
+                      As Hard Skills são as habilidades técnicas, não
+                      comportamentais. Ou seja, tudo aquilo que você aprende no
+                      ensino formal ou não, em cursos, treinamentos, na
+                      graduação e pós-graduação.
+                      <br />
+                      <br />
+                      São as informações que você quer colocar no currículo,
+                      atualizar no perfil do LinkedIn ou destacar para o
+                      recrutador em um processo de seleção.
+                      <br />
+                      <br />
+                      As hard skills são concretas, quantificáveis e de
+                      aprendizado técnico.
+                      <br />
+                      <br />
+                      Já as soft skills, como dissemos acima, trabalham no
+                      universo do que é comportamental e, portanto, são
+                      aprendizados subjetivos e difíceis de serem analisados,
+                      como o pensamento crítico, a positividade e a capacidade
+                      de tomada de decisão.
+                    </p>
+                  </div>
+                </ReadMoreInner>
+
+                <ReadMoreInner>
+                  <div>
+                    <h4>Como desenvolver Soft Skills?</h4>
+                    <p>
+                      Como são características comportamentais, desenvolver soft
+                      skills ficam muito a cargo do indivíduo.
+                      <br />
+                      <br />
+                      É preciso estar atento às próprias características,
+                      dedicado ao autoconhecimento, à melhoria contínua e à
+                      reflexão sobre as suas próprias atitudes.
+                      <br />
+                      <br />
+                      Além da reflexão individual, uma maneira de estimular o
+                      autoconhecimento para gerar uma mudança comportamental é
+                      apostando no Coaching, como destacamos antes.
+                    </p>
+                  </div>
+                  <img src={image3About} alt="Como desenvolver Soft Skills?" />
+                </ReadMoreInner>
+
+                <iframe
+                  width="637"
+                  height="346"
+                  src="https://www.youtube.com/embed/qrB94YucxFw"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title="SoftSkill"
+                />
               </ReadMore>
             )}
           </section>
