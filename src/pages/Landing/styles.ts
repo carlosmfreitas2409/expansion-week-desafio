@@ -87,6 +87,7 @@ export const PrimaryBtn = styled.button`
 export const SecondaryBtn = styled.button`
   padding: 13px 50px;
   color: #6c63ff;
+  background: transparent;
   border-radius: 25px;
   border: 2px solid #6c63ff;
   outline: 0;
@@ -278,7 +279,6 @@ export const ReadMore = styled.section`
   @media (max-width: 1094px) {
     iframe {
       width: calc(100% - 25%);
-      /* margin: 0 30px; */
     }
   }
 

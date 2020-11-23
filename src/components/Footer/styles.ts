@@ -58,10 +58,11 @@ export const FooterLeft = styled.div`
 export const FooterRight = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
 
   @media (max-width: 680px) {
     margin-top: 30px;
+    align-items: center;
 
     p {
       display: flex;

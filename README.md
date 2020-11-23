@@ -17,7 +17,7 @@
 </p>
 
 <h4 align="center">
-  Este é um projeto sobre <b>Soft Skills</b>, desenvolvido para o desafio do Expansion Week, um evento inédito - exclusivo para alunos do Bootcamp GoStack da RocketSeat - de encontros ao-vivo com pessoas e empresas que entendem muito sobre as habilidades que um dev precisa ter.
+  Este é um projeto sobre <b>Soft Skills</b>, mais especificamente do "Trabalho em Equipe", desenvolvido para o desafio do Expansion Week, um evento inédito - exclusivo para alunos do Bootcamp GoStack da RocketSeat - de encontros ao-vivo com pessoas e empresas que entendem muito sobre as habilidades que um dev precisa ter.
 </h4>
 
 <p align="center">
